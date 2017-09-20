@@ -1,0 +1,19 @@
+
+<header class="navbar navbar-default    navbar-fixed-top">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="glyphicon glyphicon-menu-hamburger"></span>
+      </button>
+
+      <%=link_to image_tag("logo.ico", alt: "HomeKart logo", class:"navbar-brand"),
+            root_path%>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav ">
+
+        <li><%= link_to "New Product", newproduct_path %></li>
+        <li><%= link_to "New Categorty", newcategory_path %></li>
+        <li><%= link_to "New Inventory", newinventory_path %></li>
+      </ul>
+    </div>
+</header>
